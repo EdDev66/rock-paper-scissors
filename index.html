@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h1 class="msg" style="text-align: center;">Pick an option</h1>
+    <!-- <h3 class="score" style="text-align: center;"></h3> -->
+    <div class="scoreboard">
+        <p class="score">Player = 0</p>
+        <p class="pcScore">Computer = 0</p>
+    </div>
+
+    <div class="options">
+        <div class="scissors box"><img src="https://img.icons8.com/color/80/000000/hand-scissors.png" class="img"></div>
+        <div class="paper box"><img src="https://img.icons8.com/color/80/000000/hand.png" class="img"></div>
+        <div class="rock box"><img src="https://img.icons8.com/color/80/000000/hand-rock.png" class="img"></div>
+    </div>
+
+    <style>
+        body {
+            background: url('bg.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .options {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .box {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border: 5px solid #000;
+            border-radius: 50%;
+            margin-left: 30px;
+            background-color: #007FFF;
+        }
+
+        .box:hover {
+            transition: 0.1s;
+            background-color: #0059B2;
+            
+        }
+
+        .img {
+            margin-top: 30px;
+        }
+
+        .scoreboard {
+            text-align: center;
+            margin: 40px;
+        
+        }
+
+        .score, .pcScore {
+            display: inline;
+            border: 2px solid #000;
+            padding: 20px;
+            border-radius: 10px;
+            font-weight: 700;
+            color: #FF2800;
+            background-color: gold;
+            
+        }
+
+     
+        
+    </style>
+    <script src="app.js"></script>
+</body>
+</html>
